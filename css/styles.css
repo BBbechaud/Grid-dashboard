@@ -69,6 +69,22 @@ main {
     background-color:lightgray;
    
 }
+
+.top-headings {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.your-projects-heading {
+    margin-left: 2%;
+}
+
+.announcements-heading {
+    margin-right: 20.5%;
+}
+
 .main-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -86,8 +102,8 @@ main {
 .project-card {
     border-left: 5px solid var(--clr-accent-2);
     background-color: white;
-    border-radius: 5px;
     position: relative;
+    border-radius: 5px;
     box-shadow: 2px 2px 2px grey;
 }
 
@@ -124,5 +140,56 @@ main {
     color:  #070000eb;
 }
 
+.right-side-container {
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements, .trending {
+    background-color: white;
+    margin-right: 5%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+    
+}
+
+.announcements {
+    margin-bottom: 10%;
+    
+}
+
+.announcement-card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    max-width: 80%;
+}
+
+.announcement-card:last-child {
+    margin-bottom: 10%;
+}
+
+hr {
+    max-width: 80%;
+    margin: 20px auto -20px;
+}
+
+.trending {
+    
+}
+
+.trending-title {
+    padding-bottom: 5px;
+}
+
+.trending-item {
+    
+    margin-left: 10px;
+}
+
+.trending-span {
+    display: block;
+}
 
 

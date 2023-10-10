@@ -63,6 +63,8 @@ header {
     grid-column: 2 / 3;
     background-color: white;
 }
+
+/* Main */
 main {
     background-color:lightgray;
    
@@ -77,15 +79,50 @@ main {
     grid-row: 1/4;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 5%;
+    column-gap: 2%;
 }
 
 .project-card {
-    border: 1px solid black;
     border-left: 5px solid var(--clr-accent-2);
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 2px 2px 2px grey;
 }
 
+.project-card p {
+    color: grey;
+}
 
+.project-card:nth-child(1),
+.project-card:nth-child(3),
+.project-card:nth-child(5) {
+    margin-left: 5%;
+}
 
+.project-card:nth-child(2),
+.project-card:nth-child(4),
+.project-card:nth-child(6) {
+    margin-right: 5%;
+}
+
+.project-card-text {
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.project-card-icons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.project-card-icons i {
+    color:  #070000eb;
+}
 
 
 

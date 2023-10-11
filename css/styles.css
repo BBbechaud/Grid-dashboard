@@ -59,9 +59,80 @@ i, i::before {
 
 /* Header */
 header {
-    grid-row: 1/2;
-    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     background-color: white;
+   
+}
+
+.search-bar {
+    width: 50%;
+    background-color: lightgray;
+    border: none;
+    height: 25px;
+    border-radius: 15px;
+    margin-right: 20%;
+}
+
+.fa-magnifying-glass {
+    margin-left: 5%;
+    margin-right: -3.5%;
+}
+
+.header-top-row {
+    margin-top: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.header-top-right {
+    display: inline;
+}
+
+.header-top-right * {
+    margin-right: -3%;
+}
+
+.header-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-bottom-left {
+    margin-left: 5%;
+    color: black;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+.username {
+    margin-left: 53px;
+}
+
+.header-bottom-right {
+    margin-right: 10%;
+    margin-top: 1%;
+    
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    
+}
+
+header ul li {
+    list-style: none;
+    background-color: var(--clr-accent-1);
+    padding: 7px 20px;
+    border-radius: 15px;
+    
+}
+
+header ul li a {
+    color: white;
 }
 
 /* Main */

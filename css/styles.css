@@ -11,9 +11,21 @@
     --clr-accent-2: #ffcc00;
 }
 
-body{
+.no-footer{
     display: grid;
     grid-template-columns: 1fr 5fr;
+}
+
+/* Text styles */
+
+body {
+    font-family: var(--ff-primary);
+}
+
+.secondary-text {
+    font-family: var(--ff-secondary);
+    color: rgb(38, 38, 38);
+    font-weight: 550;
 }
 
 /* Nav Sidebar */
@@ -34,7 +46,6 @@ h1 {
 
 nav * {
     color: white;
-    font-family: var(--ff-primary);
 }
 
 .primary-nav-div, .secondary-nav-div {
@@ -61,8 +72,7 @@ i, i::before {
 header {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: white;
-   
+    background-color: white; 
 }
 
 .search-bar {
@@ -95,8 +105,7 @@ header {
 
 .header-bottom-row {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 .header-bottom-left {
@@ -119,16 +128,14 @@ header {
 header ul {
     display: flex;
     justify-content: space-between;
-    gap: 10%;
-    
+    gap: 10%;   
 }
 
 header ul li {
     list-style: none;
     background-color: var(--clr-accent-1);
     padding: 7px 20px;
-    border-radius: 15px;
-    
+    border-radius: 15px;   
 }
 
 header ul li a {
@@ -160,6 +167,7 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 40px;
 }
 
 .projects {
@@ -221,8 +229,7 @@ main {
     background-color: white;
     margin-right: 5%;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px grey;
-    
+    box-shadow: 2px 2px 2px grey;   
 }
 
 .announcements {
@@ -247,8 +254,7 @@ hr {
 }
 
 .trending-item i {
-    margin-top: 20px;
-    
+    margin-top: 20px;   
 }
 
 .trending-title {
@@ -256,7 +262,6 @@ hr {
 }
 
 .trending-item {
-   
     margin-left: 25px;
     display: grid;
     grid-template-columns: .5fr 3fr;
@@ -271,4 +276,24 @@ hr {
     display: block;
 }
 
+footer {
+    height: 150px;
+    background-color: rgb(32, 32, 32);
+   
+}
 
+.footer-text {
+    color: white; 
+}
+
+.footer-paragraph-1 {
+    margin: 0 auto 10px;
+    padding-top: 30px ;
+    max-width: 70%;   
+}
+
+.footer-paragraph-2 {
+    margin-left: 40%;
+    margin-top: 30px;
+    max-width: 50%; 
+}
